@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
                 url("./assets/img/fondo.png"); 
     background-position: center;
     background-repeat: no-repeat;
@@ -11,6 +11,7 @@ body {
     padding: 0;
     text-align: center;
     position: relative;
+    height: 100vh;
 }
 
 
@@ -41,18 +42,21 @@ h2 {
     color: white;
     margin: 0 10px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 2.2em;
     background-color: black; 
     padding: 10px;
     border-radius: 50%;
     display: inline-block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons i:hover {
-    transform: scale(1.20);
+.social-icons a:hover {
+    background-color: #F12C55; /* Cambia el fondo al rojo */
+    color: black; /* Cambia el color del icono a negro */
+    transform: scale(1.2); /* Escala el icono */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 
 .projects {
     margin: 20px 0;
@@ -73,17 +77,18 @@ h2 {
 }
 
 .project img {
-    width: 40px;  
-    height: 40px;
+    width: 50px;  
+    height: 50px;
     margin-right: 15px;
     border-radius: 100%;
-    border: 2px solid #988836; 
+    /* border: 2px solid #988836;  */
 }
 
-.project p {
+.project a{
     margin: 0;
     text-align: center;
     color: #333; 
+    text-decoration: none;
 }
 
 .project:hover {
